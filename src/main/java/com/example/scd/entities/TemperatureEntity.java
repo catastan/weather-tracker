@@ -14,6 +14,7 @@ public class TemperatureEntity {
     
     private LocalDateTime timestamp;
 
+
     @ManyToOne
     @JoinColumn(name = "city_id")
     private CityEntity city;
