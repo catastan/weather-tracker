@@ -1,0 +1,15 @@
+.idea/
+.vscode/
+target/
+
+*.log
+*.tmp
+*.swp
+
+.DS_Store
+Thumbs.db
+
+.git
+.gitignore
+
+data.sql
