@@ -1,37 +1,37 @@
-**Nume:** Stan Petrisor Catalin \
-**Grupa:** 342C3
+**Name:** Stan Petrisor Catalin \
+**Group:** 342C3
 
-## Tema 2 - SCD
+## Assignment 2 - SCD
 
-# Aplicatie RESTful Meteo
+# RESTful Weather Application
 
-### Descriere
+### Description
 
-Aplicatia este formata dintr-ul API RESTful dezvoltat in Spring Boot, o baza
-de date MySQL si un utilitar de gestiune al bazei de date, phpMyAdmin, toate
-containerizate cu Docker.
+The application consists of a RESTful API developed in Spring Boot, a MySQL
+database and a database management utility, phpMyAdmin, all
+containerized with Docker.
 
-### Rulare
+### Running
 
 ```bash
     docker-compose up --build
 ```
 
-### Testare
+### Testing
 
-La rularea scriptului in Postman, am obtinut 74/74 teste passed.
+When running the script in Postman, I obtained 74/74 tests passed.
 
-### Mentiuni
+### Notes
 
-- Am adaugat healthcheck in `docker-compose.yml` pentru serviciul MySQL, pentru
-  a verifica daca baza de date este pornita inainte ca aplicatia sa porneasca.
+- I added a healthcheck in `docker-compose.yml` for the MySQL service, to
+  check if the database is up before the application starts.
 
-- Am utilizat un volum pentru baza de date MySQL pentru a asigura persistenta
-  datelor atunci cand se repornesc containerele.
+- I used a volume for the MySQL database to ensure data persistence
+  when containers are restarted.
 
-- Am definit variabile de mediu in `docker-compose.yml`.
+- I defined environment variables in `docker-compose.yml`.
 
-- Fisierul .dockerignore a fost adaugat pentru a exclude fisierele inutile.
+- The `.dockerignore` file was added to exclude unnecessary files.
 
-- Motivul pentru care am ales Spring Boot si MySQL este exeperienta deja
-  acumulata in cadrul lucrarii de licenta.
+- The reason I chose Spring Boot and MySQL is the experience I already
+  gained during my bachelor’s thesis.
